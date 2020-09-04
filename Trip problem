@@ -1,0 +1,19 @@
+n=int(input())
+sum=0
+sum1=0
+sum2=0
+list=[]
+for i in range(n):
+     amount=float(input())
+     list.append(amount)
+     sum+=amount
+Avg=sum/n
+for i in list:
+     if(i<Avg):
+       sum1+=Avg-i
+     elif(i>Avg):
+       sum2+=i-Avg
+if(sum1>sum2):
+     print(sum1)
+else:
+     print(sum2)
